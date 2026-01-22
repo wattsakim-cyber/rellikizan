@@ -1,0 +1,25 @@
+{
+  "name": "motion-control-video-app",
+  "version": "1.0.0",
+  "description": "A motion control video generator app inspired by Higgsfield AI - transfer motion from reference videos to character images",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "client": "cd client && npm start",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["motion-control", "video-generator", "ai", "higgsfield"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "multer": "^1.4.5-lts.1",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
