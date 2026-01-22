@@ -2,6 +2,32 @@
 
 A motion control video generator app inspired by Higgsfield AI - transfer motion from reference videos to character images.
 
+## 🚀 Free to Use - Deployed & Ready!
+
+**Rellikizan is completely FREE to use!** The app is deployed on Render.com's free tier and ready for testing.
+
+### For Coworkers/Testers:
+
+**1. Get Your Free Replicate API Key**
+- Sign up at [Replicate.com](https://replicate.com/) (100% FREE)
+- Go to your [Account Settings](https://replicate.com/account/api-tokens)
+- Create a new API token (it's free!)
+- Copy your API token
+
+**2. Use the App**
+- The app will prompt you for your Replicate API token when you first use it
+- Paste your token and start creating videos!
+- Your token is only stored in your browser (completely private)
+
+**3. Create Motion-Controlled Videos**
+- Upload a character image (PNG, JPG)
+- Upload a motion reference video (MP4, MOV)
+- Click "Generate Video" and wait for the magic!
+- Replicate's free tier includes generous credits to get started
+
+> **Note:** Each user needs their own free Replicate account. This keeps the app free for everyone and ensures you have full control over your usage.
+
+
 ## Overview
 
 This application allows users to create AI-generated videos by transferring motion from a reference video onto a still character image, similar to Higgsfield's motion control feature.
@@ -171,6 +197,29 @@ Choose and integrate with a motion control service:
 - Deploy to Heroku, Railway, or AWS
 - Set up cloud storage (S3, Cloudinary) for files
 - Configure environment variables
+
+- #### Deploy on Render.com (FREE)
+
+**Quick Deploy (Easiest Way):**
+
+1. Fork this repository to your GitHub account
+2. Sign up for [Render.com](https://render.com) (100% FREE)
+3. Click "New Web Service" and connect your GitHub repository
+4. Render will automatically detect `render.yaml` and configure everything
+5. Add your `REPLICATE_API_TOKEN` in the Environment section
+6. Click "Create Web Service" - Deploy is FREE!
+7. Share the generated URL with your team!
+
+**Manual Deploy:**
+
+1. Create a new Web Service on Render
+2. Connect your GitHub repo
+3. Build Command: `npm install`
+4. Start Command: `npm start`
+5. Select "Free" plan
+6. Add environment variable: `REPLICATE_API_TOKEN=your_token_here`
+7. Deploy!
+
 
 **Frontend:**
 - Build React app: `cd client && npm run build`
